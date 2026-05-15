@@ -15,16 +15,15 @@ body {
     color: #0f172a;
 }
 
-/* ============ QR HERO SECTION ============ */
-.qr-hero {
-    position: relative;
+/* ============ HERO SECTION ============ */
+.hero {
     width: 100%;
     background-color: #0b1f5b;
     background-image: url("images/lev2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 420px;
+    min-height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,36 +52,6 @@ body {
 .subtitle {
     color: rgba(255, 255, 255, 0.55);
     font-size: 13px;
-    margin-bottom: 24px;
-}
-
-.qr-link {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-.qr-link:hover {
-    transform: scale(1.04);
-}
-
-.qr-img {
-    width: 170px;
-    height: 170px;
-    border-radius: 14px;
-    object-fit: contain;
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
-}
-
-.tap-hint {
-    display: block;
-    margin-top: 14px;
-    color: #94a3b8;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
     margin-bottom: 24px;
 }
 
@@ -145,10 +114,9 @@ body {
 }
 
 @media (max-width: 480px) {
-    .qr-hero { min-height: 360px; }
+    .hero { min-height: 280px; }
     .overlay { padding: 28px 16px 22px; }
     .title { font-size: 20px; }
-    .qr-img { width: 130px; height: 130px; }
     .action-btn { min-width: 70px; padding: 8px 12px; font-size: 10px; }
     .action-btn .btn-icon { font-size: 18px; }
 }
@@ -156,19 +124,13 @@ body {
 </head>
 <body>
 
-<!-- ============ QR HERO / LANDING OVERLAY ============ -->
-<div class="qr-hero">
+<!-- ============ HERO ============ -->
+<div class="hero">
     <div class="overlay">
         <h2 class="title">Leverage Experts E.A</h2>
         <p class="subtitle">Margaret Gitonga — Director / Lead Partner</p>
 
-        <!-- QR CODE -->
-        <a href="https://silvamontanaresort.github.io/leverage_expert/" target="_blank" class="qr-link">
-            <img src="leverage_expert_vcard.png" alt="QR Code" class="qr-img">
-            <div class="tap-hint">TAP TO OPEN FULL PROFILE</div>
-        </a>
-
-        <!-- 3 ACTION BUTTONS ONLY: Call, Email, WhatsApp -->
+        <!-- 3 ACTION BUTTONS: Call, Email, WhatsApp -->
         <div class="actions">
             <a href="tel:+254722301118" class="action-btn call-btn">
                 <span class="btn-icon">📞</span>
@@ -178,14 +140,14 @@ body {
                 <span class="btn-icon">✉️</span>
                 Email
             </a>
-            <a href="https://wa.me/?text=Check%20out%20Margaret%20Gitonga's%20digital%20card:%20https://silvamontanaresort.github.io/leverage_expert/"
+            <a href="https://wa.me/?text=Check out Margaret Gitonga's digital card: https://margaretgitonga.github.io/LE_Margaret_Gitonga/"
                target="_blank" class="action-btn whatsapp-btn">
                 <span class="btn-icon">📱</span>
                 WhatsApp
             </a>
         </div>
 
-        <p class="footer-text">Scan the QR code or tap buttons above</p>
+        <p class="footer-text">Scan the QR code to view this page</p>
     </div>
 </div>
 
