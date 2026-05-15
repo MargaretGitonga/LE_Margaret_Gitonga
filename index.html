@@ -113,12 +113,113 @@ body {
     font-style: italic;
 }
 
+/* ============ CONTACT DETAILS SECTION ============ */
+.card {
+    max-width: 420px;
+    margin: -30px auto 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.name {
+    margin: 0 0 4px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.role {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.company-name {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.details { margin-top: 14px; }
+
+.detail-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin: 8px 0;
+    text-align: left;
+    border: 1.5px solid #e2e8f0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.detail-box:hover {
+    background: #f1f5f9;
+}
+
+.icon { font-size: 20px; flex-shrink: 0; }
+
+.text {
+    font-size: 14px;
+    color: #334155;
+}
+
+.label {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.text-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.location-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.location-link:hover {
+    opacity: 0.85;
+}
+
+.location-link .map-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 @media (max-width: 480px) {
     .hero { min-height: 280px; }
     .overlay { padding: 28px 16px 22px; }
     .title { font-size: 20px; }
     .action-btn { min-width: 70px; padding: 8px 12px; font-size: 10px; }
     .action-btn .btn-icon { font-size: 18px; }
+    .card { margin: -24px 10px 20px; }
 }
 </style>
 </head>
@@ -130,7 +231,7 @@ body {
         <h2 class="title">Leverage Experts E.A</h2>
         <p class="subtitle">Margaret Gitonga — Director / Lead Partner</p>
 
-        <!-- 3 ACTION BUTTONS: Call, Email, WhatsApp -->
+        <!-- ACTION BUTTONS: Call, Email, WhatsApp -->
         <div class="actions">
             <a href="tel:+254722301118" class="action-btn call-btn">
                 <span class="btn-icon">📞</span>
@@ -147,7 +248,63 @@ body {
             </a>
         </div>
 
-        <p class="footer-text">Scan the QR code to view this page</p>
+        <p class="footer-text">Margaret Gitonga's digital contact card</p>
+    </div>
+</div>
+
+<!-- ============ CONTACT DETAILS ============ -->
+<div class="card">
+    <div class="content">
+        <div class="name">Margaret Gitonga, <small>(BCom MBA)</small></div>
+        <div class="role"><strong>Director / Lead Partner (East Africa)</strong></div>
+        <div class="company-name">Leverage Experts E.A</div>
+        <div class="role"><strong>Zurich | Frankfurt | Dubai | Nairobi</strong></div>
+
+        <div class="details">
+            <div class="detail-box">
+                <div class="icon">📞</div>
+                <div class="text">
+                    <div class="label">Mobile</div>
+                    <a href="tel:+254722301118" class="text-link">+254 722 301 118</a>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="icon">✉️</div>
+                <div class="text">
+                    <div class="label">Email</div>
+                    <a href="mailto:margaret.gitonga@leverage-experts.com" class="text-link">
+                        margaret.gitonga@leverage-experts.com
+                    </a>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="icon">🌐</div>
+                <div class="text">
+                    <div class="label">Website</div>
+                    <a href="https://leverage-experts.com/" target="_blank">leverage-experts.com</a>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Park+Suites+4th+Floor+Nairobi"
+               target="_blank" class="location-link">
+                <div class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg"
+                         alt="Map" class="map-icon">
+                </div>
+                <div class="text">
+                    <div class="label">Location</div>
+                    <div class="text-link">Park Suites 4th Floor, Nairobi</div>
+                </div>
+            </a>
+
+            <div class="detail-box">
+                <div class="icon">🏢</div>
+                <div class="text">
+                    <div class="label">Company</div>
+                    <span class="text-link">Leverage Experts East Africa LTD</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
