@@ -15,118 +15,44 @@ body {
     color: #0f172a;
 }
 
-/* ============ HERO SECTION ============ */
-.hero {
-    width: 100%;
-    background-color: #0b1f5b;
-    background-image: url("images/lev2.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 16px;
-}
-
-.overlay {
-    background-color: rgba(11, 31, 91, 0.88);
-    backdrop-filter: blur(8px);
-    border-radius: 22px;
-    padding: 36px 28px 30px;
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
-    border: 1.5px solid rgba(255, 255, 255, 0.12);
-}
-
-.title {
-    color: #ffffff;
-    font-size: 23px;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.subtitle {
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 13px;
-    margin-bottom: 24px;
-}
-
-/* ============ ACTION BUTTONS - HORIZONTAL ROW ============ */
-.actions {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.action-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    padding: 10px 16px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-    min-width: 76px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-    flex: 0 1 auto;
-}
-
-.action-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
-}
-
-.action-btn .btn-icon {
-    font-size: 20px;
-    line-height: 1;
-}
-
-.whatsapp-btn {
-    background: linear-gradient(135deg, #25d366, #128c4b);
-    color: #ffffff;
-}
-
-.call-btn {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    color: #ffffff;
-}
-
-.email-btn {
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
-    color: #ffffff;
-}
-
-.footer-text {
-    margin-top: 18px;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 11px;
-    font-style: italic;
-}
-
-/* ============ CONTACT DETAILS SECTION ============ */
+/* ============ CARD SECTION ============ */
 .card {
     max-width: 420px;
-    margin: -30px auto 30px;
+    margin: 30px auto;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    position: relative;
-    z-index: 2;
+}
+
+.header {
+    background-color: #0b1f5b;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+.profile-wrapper {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .content {
-    padding: 28px 24px;
+    padding: 20px 24px;
     text-align: center;
 }
 
@@ -214,46 +140,23 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero { min-height: 280px; }
-    .overlay { padding: 28px 16px 22px; }
-    .title { font-size: 20px; }
-    .action-btn { min-width: 70px; padding: 8px 12px; font-size: 10px; }
-    .action-btn .btn-icon { font-size: 18px; }
-    .card { margin: -24px 10px 20px; }
+    .card { margin: 20px 10px; }
+    .logo { width: 150px; }
+    .profile-img { width: 80px; height: 80px; }
 }
 </style>
 </head>
 <body>
 
-<!-- ============ HERO ============ -->
-<div class="hero">
-    <div class="overlay">
-        <h2 class="title">Leverage Experts E.A</h2>
-        <p class="subtitle">Margaret Gitonga — Director / Lead Partner</p>
-
-        <!-- ACTION BUTTONS: Call, Email, WhatsApp -->
-        <div class="actions">
-            <a href="tel:+254722301118" class="action-btn call-btn">
-                <span class="btn-icon">📞</span>
-                Call
-            </a>
-            <a href="mailto:margaret.gitonga@leverage-experts.com" class="action-btn email-btn">
-                <span class="btn-icon">✉️</span>
-                Email
-            </a>
-            <a href="https://wa.me/?text=Check out Margaret Gitonga's digital card: https://margaretgitonga.github.io/LE_Margaret_Gitonga/"
-               target="_blank" class="action-btn whatsapp-btn">
-                <span class="btn-icon">📱</span>
-                WhatsApp
-            </a>
-        </div>
-
-        <p class="footer-text">Margaret Gitonga's digital contact card</p>
-    </div>
-</div>
-
-<!-- ============ CONTACT DETAILS ============ -->
 <div class="card">
+    <div class="header">
+        <img src="images/lev3.jpeg" alt="Leverage Experts" class="logo">
+    </div>
+
+    <div class="profile-wrapper">
+        <img src="images/margaret.jpeg" class="profile-img" alt="Profile Photo">
+    </div>
+
     <div class="content">
         <div class="name">Margaret Gitonga, <small>(BCom MBA)</small></div>
         <div class="role"><strong>Director / Lead Partner (East Africa)</strong></div>
@@ -272,16 +175,7 @@ body {
                 <div class="icon">✉️</div>
                 <div class="text">
                     <div class="label">Email</div>
-                    <a href="mailto:margaret.gitonga@leverage-experts.com" class="text-link">
-                        margaret.gitonga@leverage-experts.com
-                    </a>
-                </div>
-            </div>
-            <div class="detail-box">
-                <div class="icon">🌐</div>
-                <div class="text">
-                    <div class="label">Website</div>
-                    <a href="https://leverage-experts.com/" target="_blank">leverage-experts.com</a>
+                    <a href="mailto:margaret.gitonga@leverage-experts.com" class="text-link">margaret.gitonga@leverage-experts.com</a>
                 </div>
             </div>
 
