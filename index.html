@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Margaret Gitonga - Leverage Experts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Margaret Gitonga - Director / Lead Partner (East Africa) at Leverage Experts E.A">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #0b1f5b;
+    color: #0f172a;
+}
+
+/* ============ QR HERO SECTION ============ */
+.qr-hero {
+    position: relative;
+    width: 100%;
+    background-color: #0b1f5b;
+    background-image: url("images/lev2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px;
+}
+
+.overlay {
+    background-color: rgba(11, 31, 91, 0.88);
+    backdrop-filter: blur(8px);
+    border-radius: 22px;
+    padding: 36px 28px 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+}
+
+.title {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.qr-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.qr-link:hover {
+    transform: scale(1.04);
+}
+
+.qr-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 14px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+}
+
+.tap-hint {
+    display: block;
+    margin-top: 14px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 24px;
+}
+
+/* ============ ACTION BUTTONS - HORIZONTAL ROW ============ */
+.actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    min-width: 76px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    flex: 0 1 auto;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
+}
+
+.action-btn .btn-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128c4b);
+    color: #ffffff;
+}
+
+.call-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+}
+
+.email-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #ffffff;
+}
+
+.footer-text {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .qr-hero { min-height: 360px; }
+    .overlay { padding: 28px 16px 22px; }
+    .title { font-size: 20px; }
+    .qr-img { width: 130px; height: 130px; }
+    .action-btn { min-width: 70px; padding: 8px 12px; font-size: 10px; }
+    .action-btn .btn-icon { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ QR HERO / LANDING OVERLAY ============ -->
+<div class="qr-hero">
+    <div class="overlay">
+        <h2 class="title">Leverage Experts E.A</h2>
+        <p class="subtitle">Margaret Gitonga — Director / Lead Partner</p>
+
+        <!-- QR CODE -->
+        <a href="https://silvamontanaresort.github.io/leverage_expert/" target="_blank" class="qr-link">
+            <img src="leverage_expert_vcard.png" alt="QR Code" class="qr-img">
+            <div class="tap-hint">TAP TO OPEN FULL PROFILE</div>
+        </a>
+
+        <!-- 3 ACTION BUTTONS ONLY: Call, Email, WhatsApp -->
+        <div class="actions">
+            <a href="tel:+254722301118" class="action-btn call-btn">
+                <span class="btn-icon">📞</span>
+                Call
+            </a>
+            <a href="mailto:margaret.gitonga@leverage-experts.com" class="action-btn email-btn">
+                <span class="btn-icon">✉️</span>
+                Email
+            </a>
+            <a href="https://wa.me/?text=Check%20out%20Margaret%20Gitonga's%20digital%20card:%20https://silvamontanaresort.github.io/leverage_expert/"
+               target="_blank" class="action-btn whatsapp-btn">
+                <span class="btn-icon">📱</span>
+                WhatsApp
+            </a>
+        </div>
+
+        <p class="footer-text">Scan the QR code or tap buttons above</p>
+    </div>
+</div>
+
+</body>
+</html>
